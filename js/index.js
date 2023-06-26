@@ -21,25 +21,25 @@ btns.forEach(btn => btn.addEventListener("click", () => {
 
     switch(randomNo) {
         case 1:
-            computer = "Rock";
+            computer = "👊";
             break;
         case 2:
-            computer = "Paper";
+            computer = "🤚";
             break;
         case 3:
-            computer = "Sciccors";
+            computer = "✌";
             break;
     }
 }
 
 function checkWinner() {
     if(player == computer) {
-        return "It's a draw - try again!";
-    } else if(computer == "Rock") {
-        return(player == "Paper") ? "You Won!" : "You Lost!";
-    } else if(computer == "Paper") {
-        return(player == "Sciccors") ? "You Won!" : "You Lost!";
-    } else if(computer == "Sciccors") {
-        return(player == "Rock") ? "You Won!" : "You Lost!";
+        return "Try again! 👀";
+    } else if(computer == "👊") {
+        return(player == "🤚") ? "You Win! 🤩" : "You Lose 🥱";
+    } else if(computer == "🤚") {
+        return(player == "✌") ? "You Win! 😁": "You Lose 🤔";
+    } else if(computer == "✌") {
+        return(player == "👊") ? "You Win! 😉" : "You Lose 😪";
     }
 }
