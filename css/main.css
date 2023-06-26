@@ -15,26 +15,39 @@ body {
 
 #game {
     background-color: #9f9fd2;
-    text-align: center;
+    text-align:center;
+    justify-content: center;
+    border: 0.07rem solid;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    /* width: 60vmin;
+    height:30vmin; */
+    margin: 15vmin 30vmin 5vmin 30vmin;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
-    display: flex;
-    justify-content: center;
     border-style: none;
     background-color: transparent;
-    font-size: 5rem;
+    font-size: 5rem;    
 }
 
-.playerText {
+#playerText {
     font-size: 1 rem;
+    color: rgb(97, 90, 90)
 }
 
-.compText {
-    font-size: 2rem;
-
+#compText {
+    font-weight: bold;
 }
 
-.rezText {
+#rezText {
     font-size: 3rem;
+    color: #f5e9e9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.02rem;    
 }
