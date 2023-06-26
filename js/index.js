@@ -5,10 +5,10 @@ const btns = document.querySelectorAll('.btn');
 
 let player;
 let computer;
-let rezult;
+let result;
 
-btns.forEach(button => button.addEventListener("Click", () => {
-    player = button.textContent;
+btns.forEach(btn => btn.addEventListener("click", () => {
+    player = btn.textContent;
     computerTurn();
     playerText.textContent = `Player: ${player}`;
     compText.textContent = `Computer: ${computer}`;
@@ -21,13 +21,13 @@ btns.forEach(button => button.addEventListener("Click", () => {
 
     switch(randomNo) {
         case 1:
-            computer = "Rock 👊";
+            computer = "Rock";
             break;
         case 2:
-            computer = "Paper ✋";
+            computer = "Paper";
             break;
         case 3:
-            computer = "Sciccors ✌";
+            computer = "Sciccors";
             break;
     }
 }
@@ -35,11 +35,11 @@ btns.forEach(button => button.addEventListener("Click", () => {
 function checkWinner() {
     if(player == computer) {
         return "It's a draw - try again!";
-    } else if(computer == "Rock 👊") {
-        return(player == "Paper ✋") ? "You Won!" : "You Lost!";
-    } else if(computer == "Paper ✋") {
-        return(player == "Sciccors ✌") ? "You Won!" : "You Lost!";
-    } else if(computer == "Sciccors ✌") {
-        return(player == "Rock 👊") ? "You Won!" : "You Lost!";
+    } else if(computer == "Rock") {
+        return(player == "Paper") ? "You Won!" : "You Lost!";
+    } else if(computer == "Paper") {
+        return(player == "Sciccors") ? "You Won!" : "You Lost!";
+    } else if(computer == "Sciccors") {
+        return(player == "Rock") ? "You Won!" : "You Lost!";
     }
 }
